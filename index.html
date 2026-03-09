@@ -4,109 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elroy Phillip – Digital Business Card</title>
+
+    <title>Roy Phillip | WEP Global Tech</title>
 
     <style>
-        .button {
-            display: block;
-            margin: 14px 0;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #3a4cff;
-            color: #7d8cff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.2s;
-        }
-
-        .button:hover {
-            background: #3a4cff;
-            color: white;
-        }
-
         body {
             margin: 0;
-            background: #000000;
+            background: #000;
             color: #E0EFFF;
-            font-family: Arial, sans-serif;
-            padding: 24px;
-            line-height: 1.6;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .card {
-            max-width: 430px;
-            margin: auto;
-            background: #111827;
+
+            max-width: 420px;
+            width: 90%;
             padding: 30px;
             border-radius: 18px;
-            border: 2px solid #1E90FF;
-            box-shadow: 0 0 20px #1E90FF55;
+            border: 2px solid #333;
+            text-align: center;
+            background: #050505;
+
+            box-shadow: 0 0 25px rgba(80, 100, 255, .25);
+
+        }
+
+        .profile {
+
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #5c6cff;
+            margin-bottom: 18px;
+
         }
 
         h1 {
-            font-size: 34px;
-            margin-bottom: 6px;
-            color: #1E90FF;
-            text-align: center;
+
+            margin-top: 5px;
+            font-size: 32px;
+
         }
 
-        h2 {
-            font-size: 20px;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 26px;
-            color: #9CC9FF;
+        .subtitle {
+
+            margin-top: 12px;
+            margin-bottom: 28px;
+            font-size: 16px;
+            line-height: 1.6;
+
         }
 
-        .btn {
+        .button {
+
             display: block;
-            background: #1E90FF;
-            color: white;
-            text-decoration: none;
-            padding: 16px;
             margin: 12px 0;
-            text-align: center;
-            font-size: 20px;
-            border-radius: 14px;
+            padding: 14px;
+
+            border-radius: 10px;
+
+            border: 1px solid #5c6cff;
+
+            text-decoration: none;
+
+            color: #8ea0ff;
+
             font-weight: bold;
-            box-shadow: 0 0 10px #1E90FF88;
+
+            transition: all .25s ease;
+
         }
 
-        .btn:hover {
-            background: #38A6FF;
+        .button:hover {
+
+            background: #5c6cff;
+            color: white;
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 6px 14px rgba(92, 108, 255, .35);
+
+        }
+
+        .qr {
+
+            margin-top: 30px;
+
+        }
+
+        .qr img {
+
+            width: 130px;
+            border-radius: 10px;
+
         }
 
         .footer {
-            text-align: center;
+
             margin-top: 20px;
-            font-size: 14px;
-            color: #7AA7CC;
+            font-size: 12px;
+            color: #bbb;
+
         }
     </style>
+
 </head>
 
 <body>
+
     <div class="card">
 
+        <img class="profile" src="profile.jpg">
+
         <h1>Elroy “Roy” Phillip</h1>
-        <h2>Founder • Cloud Infrastructure Consultant
-            <br> Systems Administrator • Broadcast Engineer
-        </h2>
+
+        <div class="subtitle">
+
+            Founder • Cloud Infrastructure Consultant
+            <br>
+            Systems Administrator • Broadcast Engineer
+
+        </div>
+
         <a href="WEPGT-Roy-Phillip.vcf" download class="button">
             📇 Save My Contact
         </a>
-        <a class="btn" href="tel:4043542260">📞 Call Me – 404-354-2260</a>
-        <a class="btn" href="sms:4043542260">💬 Text Me</a>
-        <a class="btn" href="mailto:elroy.phillip@wepgt.com">📧 Email Me</a>
-        <a class="btn" href="https://wepgt.com" target="_blank">🌐 WEP Global Tech</a>
-        <a class="btn" href="https://linkedin.com/in/elroyphillip" target="_blank">🔗 LinkedIn</a>
+
+        <a href="tel:4043542260" class="button">
+            📞 Call Me — 404-354-2260
+        </a>
+
+        <a href="sms:4043542260" class="button">
+            💬 Text Me
+        </a>
+
+        <a href="mailto:info@wepglobaltech.com" class="button">
+            ✉ Email Me
+        </a>
+
+        <a href="https://wepglobaltech.com" class="button">
+            🌐 WEP Global Tech
+        </a>
+
+        <a href="https://linkedin.com" class="button">
+            🔗 LinkedIn
+        </a>
+
+
+        <div class="qr">
+
+            <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://wepgt.github.io/digital-business-card/">
+
+        </div>
 
         <div class="footer">
+
+            Scan QR to open this digital card
+
+            <br><br>
+
             WEP Global Tech • Atlanta, GA
-            <br> Empowering Cloud & Infrastructure Solutions
+            <br>
+            Empowering Cloud & Infrastructure Solutions
+
         </div>
 
     </div>
+
 </body>
 
 </html>
